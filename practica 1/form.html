@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORM</title>
+</head>
+<body>
+    <h1><u>ETIQUETAS PARA FORMULARIOS</u></h1>
+    <h2>&lt;form>&lt;/form></h2>
+    <p>
+        El elemento HTML &lt;form> Esta etiqueta no cambia ni nos da un estilo en particular, tampoco modifica el contenido de la pagina,sin embargo si representa una sección de un documento que contiene controles interactivos que permiten a un usuario enviar información a un servidor web.<br>Es posible usar las pseudo-clasess de CSS :valid e :invalid para darle estilos a un elemento form.
+    </p>
+        <h2>&lt;input>&lt;/input></h2>
+    <p>
+        El elemento HTML &lt;input> Eqtiqueta para la entrada de datos se usa para crear controles interactivos para formularios basados en la web con el fin de recibir datos del usuario.<br> El elemento &lt;input> es uno de los más potentes y complejos en todo HTML debido a la gran cantidad de combinaciones de tipos y atributos de entrada.<br>
+            Algunos atributos del &lt;input>:
+        <ol>
+            <ul>button</ul>
+            <ul>checkbox</ul>
+            <ul>date</ul>
+            <ul>datetime-local</ul>
+            <ul>email</ul>
+            <ul>file</ul>
+            <ul>number</ul>
+            <ul>password</ul>
+            <ul>radio</ul>
+            <ul>submit</ul>
+        </ol>
+        Ejemplos:
+        <ol>
+            <li>
+                <div>
+                    &lt;label for="password">Ingrese su contraseña&lt;/label><br>  
+                    &lt;input type="tipo de input" name="contraseña" id="password">&lt;/input>
+                </div>
+                <div>
+                    <label for="password">Ingrese su contraseña</label>
+                    <input type="tipo de input" name="contraseña" id="password"></input>
+                </div>
+            </li>
+            <li>
+                <div>
+                    &lt;input type="submit" value="Confirmar">&lt;/input><br>  
+                    &lt;button type="submit">Enviar&lt;/button>
+                </div>
+                
+                <div>
+                    <input type="submit" value="Confirmar"></input>
+                    <button type="submit">Enviar</button>
+                </div>
+            </li>
+            <li>
+                <div>
+                    &lt;label for="pais-1">seleccione un pais&lt;/label><br>
+                    &lt;span>Argentina&lt;/span>&lt;input type="radio" name="pais-1" id="Ar">&lt;/input><br>
+                    &lt;span>Francia&lt;/span>&lt;input type="radio" name="pais-1" id="Fr">&lt;/input>
+                </div>
+                <div>
+                    <label for="pais-1">seleccione un pais</label>
+                    <span>Argentina</span><input type="radio" name="pais-1" id="Ar"></input>
+                    <span>Francia</span><input type="radio" name="pais-1" id="Fr"></input>
+                </div>
+            </li>
+            <li>
+                <div>
+                    &lt;label for="mensaje">Ingrese su mensaje&lt;/label><br>  
+                    &lt;textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="hola a todos">&lt;/textarea>
+                </div>
+                <div>
+                    <label for="mensaje">Ingrese su mensaje</label>
+                    <textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="hola a todos"></textarea>
+                </div>
+            </li>
+        </ol>
+    <h2>&lt;label>&lt;/label></h2>
+    <p>
+        El Elemento HTML &lt;label> representa una etiqueta para un elemento en una interfaz de usuario.Este puede estar asociado con un control ya sea mediante la utilizacion del atributo for, o ubicando el control dentro del elemento label.
+        <p>
+            &lt;label for="lo mismo que el id">Nos sirve para saber de que trata nuestro input&lt;/label><br>  
+            &lt;input type="tipo de input" name="nombre de usuario" id"lo mismo que el name" placeholder="indica que tipo de dato debemos ingresar">&lt;/input>
+                <div>
+                <label for="lo mismo que el id">Nombre</label>
+                <input type="tipo de input" name="username" id="username" placeholder="David Enrique" required></input>
+                </div>
+        </p>
+        <h3>for</h3>
+        <p>
+            El ID del elemento de formulario etiquetable relacionado en el mismo documento que el elemento label. El primer elemento en el documento con tal ID que coincida con el dispuesto en el atributo for será el control etiquetado para este elemento.
+        </p>
+        <p>
+            &lt;label for="email">Ingrese su Email&lt;/label><br>  
+            &lt;input type="email" name="Email" id="Email">&lt;/input>
+            <div>
+            <label for="email">Ingrese su Email</label>
+            <input type="email" name="Email" id="Email"></input>
+            </div>
+        </p>
+    </p>
+    <h2>&lt;select>&lt;/select></h2>
+    <p>
+        Este elemento de HTML representa un control que muestra un menú de opciones. Las opciones contenidas en el menú son representadas por elementos &lt;option>&lt;/option>.
+    </p>
+    <p>
+        &lt;label for="pais">selecciona un pais&lt;/label><br>  
+        &lt;select name="pais" id="pais">&lt;/input><br>
+        &lt;option>argentina&lt;/option><br>
+        &lt;option>peru&lt;/option><br>
+        &lt;option>uruguay&lt;/option><br>
+        <div>
+            <label for="pais">selecciona un pais</label>
+            <select name="pais" id="pais"></input>
+            <option>argentina</option>
+            <option>peru</option>
+            <option>uruguay</option>
+        </div>
+    </p>
+    <p>
+        <a href="introduccion.html" rel="index.html">ir a introduccion</a>
+        <a href="multimedia.html" rel="index">ir a multimedia</a>
+    </p>
+    
+</body>
+</html>
+
+<!-- &lt; COCODRILOS &gt -->
