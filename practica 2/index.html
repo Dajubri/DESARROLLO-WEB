@@ -16,15 +16,63 @@
     <p>
         El CSS es un lenguaje basado en reglas: cada usuario define las reglas que especifican los grupos de estilos que van a aplicarse a elementos particulares o grupos de elementos de la página web. Por ejemplo: «Quiero que el encabezado principal de mi página se muestre en letras grandes de color rojo».
     </p>
-    <img src="./imagenes/sintaxiscss.jpg" alt="sintaxiscss">
+    <p>
+        Una de las partes más importantes cuando se empieza a trabajar en diseño web con CSS es conocer las nomenclaturas correctas con las que podemos nombrar a las clases y a los identificadores, para no tener problemas entre navegadores. Por ello, nunca debemos comenzar a nombrar clases con números o utilizar mayúsculas.
+    </p>
+    <img src="https://i0.wp.com/www.silocreativo.com/wp-content/uploads/2016/12/sintaxis-CSS.png?resize=666%2C500&quality=100&strip=all&ssl=1" alt="sintaxiscss">
     </p>
     <p>
-
+        Para saber cómo diseñar una web, es necesario conocer la estructura en CSS, que siempre es la misma y está formada por tres elementos bien diferenciados: selector, propiedad y valor. Con el selector indicamos que elementos en nuestro HTML van a ser objetos de estos estilos. Y con la propiedad y el valor establecemos estos cambios en forma de par, por ejemplo color: rojo o tamaño de texto: 16px. Siempre propiedad: valor.<br>
+        Es importante aquí conocer que cada regla en CSS empieza con uno o varios selectores y los valores siempre están comprendidos entre dos llaves, una de apertura y otra de cierre. Para las propiedades y valores siempre usamos dos puntos para asignar un valor a la propiedad y un punto y como entre cada declaración.<br>
+        Estas normas de puntuación son importantes, pues un error en ellas puedes causar que el resto de las reglas que vienen a continuación en la hoja de estilos no sean interpretadas por el navegador.
     </p>
-    
+    <h2>Tipos de selectores</h2>
+    <p>
+        Es uno de los puntos más importantes en CSS y que todo maquetador debería conocer. Además, no todos los tipos de selectores tienen la misma importancia para el navegador, por lo que si no sabemos utilizar correctamente el orden de importancia de cada uno, el navegador podría aplicar estilos incorrectos heredados de otro selector, cosa que no queremos que ocurra en nuestro diseño.
+    </p>
+    <img src="https://i0.wp.com/www.silocreativo.com/wp-content/uploads/2016/12/selectores-CSS.png?resize=666%2C500&quality=100&strip=all&ssl=1" alt="tipo-de-selectores">
+    <p>
+        Hay varios tipos de selectores aunque los más comunes son los identificadores (id), clases (class) y elementos HTML. Cada uno de ellos como hemos comentado tiene un orden de importancia, siendo de mayor a menor:
+        <ol>
+            <ul>identificadores (id)</ul>
+            <ul>clases (class)</ul>
+            <ul>elementos HTML</ul>
+        </ol>
+        Además estos selectores pueden ser agrupados y combinados para conseguir selectores más específicos y por lo tanto con más peso a la hora de aplicar estilos. Veamos cada uno de ellos.
+    </p>
+    <h3>Identificadores como selector en CSS</h3>
+    <p>
+        El id o identificador es el selector que tiene mayor peso y siempre que lo usemos para definir una propiedad, esta se aplicará por encima de la clase o elemento de igual nivel. Hay que tener en cuenta que los identificadores son por definición elementos únicos y que no se repiten en el HTML, por lo que solo estaremos aplicando dicho estilo a un único elemento.<br>
+        Suponiendo que tenemos el siguiente HTML:
+        
+        <div>&lt;h1 id="heading" class="alert">Título del artículo&lt;/h1></div>
+        
+        el identificador del elemento será #heading. Siempre utilizaremos en símbolo almohadilla delante del nombre del identificador.
+    </p>
+    <h3>Clases como selectores de CSS</h3>
+    <img src="https://i0.wp.com/www.silocreativo.com/wp-content/uploads/2016/12/ejemplo-selectores-CSS.png?resize=666%2C500&quality=100&strip=all&ssl=1" alt="selector-clase">
+    <p>
+        Las clases son selectores CSS muy flexibles, ya que si se pueden repetir, por tanto podemos aplicar un mismo estilo a varios elementos en el HTML, simplemente repitiendo la asignación de dicha clase. Las clases van precedidas de un punto delante de la misma. Tomando el mismo HTML de antes, vamos a asignar un color por la clase.
+
+        <div>.alert{color: red;}</div>
+    </p>
+    <h3>Elementos HTML como selectores en CSS</h3>
+    <p>
+        Los elementos HTML también pueden ser usados como selectores en CSS. Snn embargo es el menos recomendable, pues si el HTML cambia en el futuro, algunos estilos ya definidos en el CSS pueden aplicarse a los nuevos, no teniendo la libertad de editar el HTML libremente. Los selectores de HTML se utilizan sin ningún elemento externo, simplemente en nombre del elemento. Definiremos el color amarillo a nuestro h1:
+        <div>h1 {color: yellow;}</div>
+    </p>
+    <h3>Selectores CSS avanzados</h3>
+    <p>
+        Además de los identificadores, las clases y los elementos, existen selectores CSS avanzados como los atributos [attr=value], donde lo que se busca es el nombre de atributo y que coincida con el valor especificado en el HTML.
+    </p>
+    <p>
+        También son interesantes conocer los pseudo-selectores, donde podremos especificar el primer o último elemento de un grupo o incluso la primera letra de un elemento. Por ejemplo con :first-child o :first-letter.
+    </p>
     
 
 
     
 </body>
 </html>
+
+<!-- &lt; COCODRILOS &gt -->
