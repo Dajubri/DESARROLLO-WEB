@@ -1,0 +1,71 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.padre{
+    background-color: green;
+
+    height: 100vh; /* Viewport height (medida relativa), es toda la parte visible de la pagina, equivale al 100% del viewport (celular, tablet, monitor, distintas medidas) */
+    
+    width: 100vw; /* Viewport width, mide el ancho total */
+    
+    display: flex; /* Nos habilita a darle direccion a los elementos; en este caso los elementos se alinean, para trabajar con FLEXBOX si o si se necesita activar el "display: flex" y siempre en el padre no en el hijo */
+    
+    flex-direction: row; /* por defecto viene ROW, podriamos poner column */
+    /* flex-direction: row-reverse;
+    flex-direction: column-reverse; invirte el orden de los elementos */
+
+    gap: 50px; /* espacio entre elementos, hacia arriba y hacia abajo */
+    row-gap: 25px;
+    column-gap: 50px;
+    gap: 25xp 50xp;
+
+    flex-wrap: wrap; /* hace que los elementos no modifiquen su tamaño y que vayan acomodandose hacia abajo de la pagina */
+
+    /* justify-content, ALINEA EN EL EJE X, HORIZONTALMENTE */
+    justify-content: space-between; /* combinable con el padding */
+    justify-content: space-evenly;
+    justify-content: space-around;
+
+    /* align-items, ALINEA EN EL EJE Y, VERTICALMENTE */
+    align-items: center;
+
+    /* 
+    DISPLAY: FLEX 
+    default; flex-direction: row;
+    default; justify-content: eje X
+            aling-items: eje Y
+
+    PERO SI TRABAJAMOS CON COLUMN:
+    flex-direction: column;
+    justify-content: eje Y
+            aling-items: eje X
+    */
+
+    /* EJEMPLO:
+    flex-direction: column;
+    align-items: end;
+    padding: 50px; */
+
+}
+
+
+/* colocar ".padre .hijo" en vez de solo ".hijo" tiene mayor especificidad y afectara solo a los hijos que contenta el valor "padre" */
+.padre .hijo{
+    width: 200px;
+    height: 200px;
+    border-radius: 15px;
+    background-color: blueviolet;
+    /* display: inline-block; */ /* los espacios que hay entre los bloques son los espacios del div que escribimos en HTML, uno debajo del otro, si quisieramos eliminarlos tendriamos que escribirlos uno al lado del otro (<div class="hijo"></div><div class="hijo"></div><div class="hijo"></div>) por que inline-block los interpreta como si fuera un texto y no se soluciona aunque le demos "margin 0" por eso se utiliza FLEXBOX*/
+}
+
+.padre .especial{
+    width: 200px;
+    height: 200px;
+    border-radius: 15px;
+    background-color: rgb(233, 31, 17);
+}
