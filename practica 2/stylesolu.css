@@ -1,0 +1,75 @@
+/* Propiedades que conviene colocar en el selectore universal (*) para anular las propiedades que trae html por defecto */
+
+/* normalización basica / normalize */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    /* background-color: rgba(12, 68, 78, 0.829); */
+}
+
+.caja{
+    width: 200px;
+    height: 200px;
+    background-color: green;
+    border: 3px solid red;
+    color:white;
+    /* Si queremos que no se modifique el tamaño de la caja (200 x 200), que no se sume los 10px del border, tendremos que usa border-sizing: border-box (realiza la resta automatica), se recomienda ponerlo el selector universal (*) */
+    /* box-sizing: border-box; */
+    
+    
+    margin-top: 50px;
+    box-shadow: 0px 0px 5px 5px white, /* box-shadow: inset, calcula el blur hacia dentro */
+    0px 0px 5px 5px red;
+    /* eje X (+) hacia abajo; eje Y (-) hacia arriba; blur; base; color */
+}
+
+.cajon{
+    width: 200px;
+    height: 200px;
+    background-color:white;
+    margin-left: 300px; /* al aplicar margin: 0; en el selector universal, nuestra caja exactamente 50px de separación */
+    margin-top: 100px;
+    box-shadow: 0px 0px 3px 0px rgba(95, 91, 91, 0.425);
+
+}
+
+input{
+    border: none;
+    background-color:white;
+    margin-left: 300px;
+    margin-top: 100px;
+    box-shadow: 0px 2px 3px 0px rgba(95, 91, 91, 0.425);
+
+}
+
+.cajita{
+    margin-left: 50px;
+    margin-top: 50px;
+    border: none;
+    background-color:white;
+    
+    box-shadow: 
+    0px 2px 3px 0px rgba(95, 91, 91, 0.425),
+    0px 40px 3px -5px rgba(95, 91, 91, 0.425);
+    padding: 5xp 18xp;
+}
+
+ul{
+    padding: 20px;
+}
+
+li{
+    list-style-type: none; /* elimina el puntito que viene por defecto */
+}
+
+h1{
+    color: white;
+    font-size: 200px;
+    font-family: sans-serif;
+    -webkit-text-stroke: 3px rgba(77, 72, 72, 0.774);
+}
+
