@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+
+}
+
+/* Es una manera de trabajar ordenado, si despues presionamos f3 podemos buscar el selector que queramos, por eso es recomendable tener en cuenta la especificidad; ejemplo: .color-card .colors .color */
+
+/* Color card style: */
+.colors-cards{
+
+}
+
+.color-card{
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    gap: 20px;
+}
+
+.color-card .colors{
+    display: flex;
+    flex-direction: column;
+    width: 100%; /* En porcentaje por si queremos cambiar mas adelante el tamaño del padre (.color-card) */
+    height: 250px;
+    border-radius: 15px;
+    overflow: hidden; /* no permite que espacio de los "hijos" rebase el espacio de "padre" */
+}
+
+/* 
+nth-child(1) nos permite llamar a hijos que tengan el mismo nombre segun el orden 
+            <div class="color"></div>
+            <div class="color"></div>
+            <div class="color"></div>
+            <div class="color"></div>
+*/
+.color-card .colors .color:nth-child(1){
+    /* width: 100%; la etiqueta div al ser en bloque toma por defecto el todo el ancho disponible, por eso no es necesario poner un width */
+    height: 38%;
+}
+
+.color-card .colors .color:nth-child(2){
+    height: 32%;
+}
+
+.color-card .colors .color:nth-child(3){
+    height: 20%;
+}
+
+.color-card .colors .color:nth-child(4){
+    height: 15%;
+}
+.color-card .color-card-controls{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.color-card .color-card-controls .btn-like{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    padding: 0px 14px;
+    font-size: 14px;
+    border: 1px solid rgba(0, 0, 0, 0.132);
+    border-radius: 10px;
+    gap: 5px;
+
+}
+
+.color-card .color-card-controls .time{
+    color: #9d9d9d;
+    font-size: 14px;
+}
+
+/* Color card style (END) */
