@@ -13,7 +13,14 @@
 
 /* Color card style: */
 .colors-cards{
-
+    display: flex;
+    gap: 20px;
+    /* 
+    Anchos de cajas + los gaps + los padiding; especificamos el ancho de la "SECCION" para tener siempre una fila de 4, de lo contrario tomaria todo el ancho de la pagina*/
+    width: calc(250px * 4 + 20px * 3 + 20px * 2 + 4px);
+    border: 2px solid red;
+    padding: 0 20px;
+    flex-wrap: wrap;
 }
 
 .color-card{
