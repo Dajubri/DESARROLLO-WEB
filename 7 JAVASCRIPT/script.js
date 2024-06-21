@@ -70,54 +70,29 @@ NaN (no puede ser comparado con ningun otro dato)
 
 /* COMPARADORES 
 
-    ==   : es verdad que este dato es igual
+==   : es verdad que este dato es igual
         Ej: 1 == '1' true
-
-    ===  : es verdad que este dato es estrictamente igual
+===  : es verdad que este dato es estrictamente igual
         Ej: 1 === '1' false (compara el valor y el tipo del dato)
-
-    !=   : es verdad que este dato es diferente
+!=   : es verdad que este dato es diferente
         Ej: 1 != true  false
-
-    !==  : es verdad que este dato estrictamente diferente
+!==  : es verdad que este dato estrictamente diferente
         Ej: 1 != true  true
-
-    >    : es verdad que este dato es mayor
+>    : es verdad que este dato es mayor
         Ej:
-    <    : es verdad que este dato es menor
-
-    >=   : es verdad que este dato es mayor o igual
+<    : es verdad que este dato es menor
         Ej:
-
-    <=   : es verdad que este dato es menor o igual
+>=   : es verdad que este dato es mayor o igual
+        Ej:
+<=   : es verdad que este dato es menor o igual
         Ej:
 
 */  
 
-/* FUNCIONES NATIVAS
+/* FUNCIONES NATIVAS */
 
-typeof() tipo de dato de un dato
-isNaN()  devuelve un booleano dependiendo di es un NaN o no (dira true cuando el dato no es un numero)
-
-*/
-
-/* EJERCICIOS: escribir tipo de dato y resultado:
-
-5 + null
-
-3 + 0
-
-4 - '8'
-
-null == NaN
-
-'pepe' + ''
-
-NaN === ''
-
-true === 1
-
-*/
+/*    typeof()  tipo de dato de un dato */
+ /*   isNaN()  devuelve un booleano dependiendo si es un NaN o no (dira true cuando el dato no es un numero) */
 
 
 
@@ -125,22 +100,30 @@ true === 1
 
 
 
+/*  for (let i = 0; ; i++) {
+        console.log(i);
+        if (i > 3) break;
+        // more statements
+      } */
+
+/*       let i = 0;
+
+        for (;;) {
+        if (i > 3) break;
+        console.log(i);
+        i++;
+      } */
 
 
+/*       for (let i = 0; i < 3; i++) {
+        setTimeout(() => {
+        console.log(i);
+        }, 1000);
+      } */
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* 
-    Datos objeto:
-*/
+      let i = 0;
+      for (; i < 3; i++) {
+        setTimeout(() => {
+          console.log(i);
+        }, 1000);
+      }
